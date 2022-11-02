@@ -1,0 +1,12 @@
+# Finite element software for calculating fluid flow and heat transport for seamounts 
+
+# V.C. Manea, E. G. Sewell, M. Manea, S. Yoshioka and N. Suenaga
+
+
+#  Here we make fully available our Fortran codes for the scientific community and papers treating similar topics for hydrothermal circulation related with seamounts. These codes can  all be run with the fully functional free demo PDE2D version (www.pde2d.com) which has a maximum limit for the unknowns set to 12000. Download the demo version and look in the README_DEMO.txt file for step-by-step information on how to install and use PDE2D on a local machine. The PDE2D program benchmark_2D.f, available as supplementary file, can be used to compute temperature, pressure and flow for a simple 2-D simulation with uniform permeability. axi_benchmark_k1.f is an asymmetrical model with a constant permeability k1 = 1E-15 m^2, and  axi_benchmark_k1_k2.f can be used for asymmetrical simulation with a layered permeability structure, k1 = 1E-15 m^2 and k2 = 1E-14 m^2. EOS_pure_water.dat contains density, dynamic viscosity and specific heat calculated as a function of P-T for the EOS of pure water. Grizzly_Bear_Seamount.f solves hydrothermal circulation for the Grizzly Bear seamount. EOS_seawater.dat contains density and viscosity calculated based on the EOS for seawater with a salinity of 3.5%. Grizzly_Bear_Postprocessing.m is a MATLAB code that reads in the output files from the Grizzly_Bear_Seamount.f program. It also reads the observed heat flow data stored in GrizzlyBear_Heat_Flow_data_Left_side.dat and GrizzlyBear_Heat_Flow_data_Right_side.dat and lithological boundaries (Grizzly_Bear_surface.dat, Grizzly_Bear_sediments_basalt_limit.dat, Grizzly_Bear_top_basement.dat). All Fortran PDE2D codes provided here are reusable and also easily extensible to a wide range of problems related with hydrothermal circulation in seamounts. 
+
+# Highlights
+
+# 1) We study the use of General-purpose Finite Element Program (PDE2D) to solve the coupled equations of continuity, Darcy, and energy conservation.
+# 2) We calculate using finite elements flow, temperature and pressure distribution inside seamounts of arbitrary shapes and complex geometries. 
+# 3) We present a numerical axisymmetrical model tailored to the real geometry of the Grizzly Bear seamount, and obtain a good correlation between our predictions and in-situ available observations.
